@@ -27,25 +27,25 @@ Workshop 환경은 OpenShift Cluster 환경에서 실행되며, 각 고유한 �
 
   - 계정/비밀번호 : <span style="color: red"> userx / openshift </span>
 
-  ![console_connect](C:\Works\01_자료\01_OCP\2023_KDN_Account_Day\202306_container_workshop\openshift_images\console_connect.png)
+  ![console_connect](https://github.com/justone0127/container-workshop-02.openshift-labs/blob/main/images/console_connect.png)
 
 **1-2) Web Terminal 실행 방법**
 
 - OppenShift 콘솔에 접속하여 윗 쪽 상단의 아이콘을 통해 Web Terminal을 실행합니다. OpenShift CLI 및 명령어 사용을 위해 사용 할 Web Terminal 환경입니다.
 
-  ![user_webterminal_icon](C:\Works\01_자료\01_OCP\2023_KDN_Account_Day\container-demo-main\user_webterminal_icon.png)
+  ![user_webterminal_icon](https://github.com/justone0127/container-workshop-02.openshift-labs/blob/main/images/user_webterminal_icon.png)
 
 - 아이콘을 누르면 하단에 Terminal 창이 활성화 됩니다. 
 
-  ![user_webterminal_bottom](C:\Works\01_자료\01_OCP\2023_KDN_Account_Day\container-demo-main\user_webterminal_bottom.png)
+  ![user_webterminal_bottom](https://github.com/justone0127/container-workshop-02.openshift-labs/blob/main/images/user_webterminal_bottom.png)
 
 - 만약 새로운 창으로 Terminal을 실행하기를 원한다면 새 창으로 열기 아이콘을 선택합니다.
 
-  ![user_webterminal_new_windows_icon](C:\Works\01_자료\01_OCP\2023_KDN_Account_Day\container-demo-main\user_webterminal_new_windows_icon.png)
+  ![user_webterminal_new_windows_icon](https://github.com/justone0127/container-workshop-02.openshift-labs/blob/main/images/user_webterminal_new_windows_icon.png)
 
 - 다음과 같이 새로운 창에서 Termianl이 열립니다.
 
-  ![user_new_windows_webterminal](C:\Works\01_자료\01_OCP\2023_KDN_Account_Day\container-demo-main\user_new_windows_webterminal.png)
+  ![user_new_windows_webterminal](https://github.com/justone0127/container-workshop-02.openshift-labs/blob/main/images/user_new_windows_webterminal.png)
 
   > 이렇게 활성화 된 Terminal에서 실습을 수행하실 때 명령어 수행을 진행하실 수 있습니다.
 
@@ -62,57 +62,57 @@ OpenShift에 애플리케이션을 배포하기 위해서 프로젝트를 생성
 
 - 애플리케이션을 배포하기 위해 프로젝트를 생성합니다.
 
-  ![01_creating_project](C:\Works\01_자료\01_OCP\2023_KDN_Account_Day\202306_container_workshop\openshift_images\01_creating_project.png)
+  ![01_creating_project](https://github.com/justone0127/container-workshop-02.openshift-labs/blob/main/images/01_creating_project.png)
 
 - `프로젝트 이름` : userx-demo 입력 (자신의 계정-demo)
 
-  ![02_user1_demo_project](C:\Works\01_자료\01_OCP\2023_KDN_Account_Day\202306_container_workshop\openshift_images\02_user1_demo_project.png)
+  ![02_user1_demo_project](https://github.com/justone0127/container-workshop-02.openshift-labs/blob/main/images/02_user1_demo_project.png)
 
 - 애플리케이션 배포
 
   아래 화면에서 `Add page`를 선택하여 애플리케이션 배포를 계속 진행합니다.
 
-  ![03_application_deployment_add_page](C:\Works\01_자료\01_OCP\2023_KDN_Account_Day\202306_container_workshop\openshift_images\03_application_deployment_add_page.png)
+  ![03_application_deployment_add_page](https://github.com/justone0127/container-workshop-02.openshift-labs/blob/main/images/03_application_deployment_add_page.png)
 
 - VM 및 컨테이너 환경 실습과 동일하게 Apache httpd 기반으로 애플리케이션을 실행하기 위해서는 Developer Catalog 화면에서 All Services를 선택합니다.
 
-  ![04_developer_catalog](C:\Works\01_자료\01_OCP\2023_KDN_Account_Day\202306_container_workshop\openshift_images\04_developer_catalog.png)
+  ![04_developer_catalog](https://github.com/justone0127/container-workshop-02.openshift-labs/blob/main/images/04_developer_catalog.png)
 
 - 검색창에 `httpd`를 검색한 후, **Builder Images**의 **Apache HTTP Server (httpd)**를 선택합니다.
 
-  ![05_builder_images](C:\Works\01_자료\01_OCP\2023_KDN_Account_Day\202306_container_workshop\openshift_images\05_builder_images.png)
+  ![05_builder_images](https://github.com/justone0127/container-workshop-02.openshift-labs/blob/main/images/05_builder_images.png)
 
   
 
 - **Create** 버튼을 눌러서 진행을 계속합니다.
 
-  ![06_create_application](C:\Works\01_자료\01_OCP\2023_KDN_Account_Day\202306_container_workshop\openshift_images\06_create_application.png)
+  ![06_create_application](https://github.com/justone0127/container-workshop-02.openshift-labs/blob/main/images/06_create_application.png)
 
 - Git Repo URL은 아래 기입된 정보를 입력하여 계속 진행합니다. 다른 정보는 기본으로 두고 진행을 계속합니다.
 
   - Git Repo URL : https://github.com/ellisonleao/clumsy-bird/
 
-  ![07_create_s2i_image_application](C:\Works\01_자료\01_OCP\2023_KDN_Account_Day\202306_container_workshop\openshift_images\07_create_s2i_image_application.png)
+  ![07_create_s2i_image_application](https://github.com/justone0127/container-workshop-02.openshift-labs/blob/main/images/07_create_s2i_image_application.png)
 
 - Topolozy에서 실행중인 Pod(Container)를 선택하면 상세 정보를 확인할 수 있습니다.
 
-  ![08_pod_toplozy](C:\Works\01_자료\01_OCP\2023_KDN_Account_Day\202306_container_workshop\openshift_images\08_pod_toplozy.png)
+  ![08_pod_toplozy](https://github.com/justone0127/container-workshop-02.openshift-labs/blob/main/images/08_pod_toplozy.png)
 
 - 오른쪽 상세 정보에서 **Builds** 부분의 **View logs**를 선택합니다.
 
-  ![09_builds_view_logs](C:\Works\01_자료\01_OCP\2023_KDN_Account_Day\202306_container_workshop\openshift_images\09_builds_view_logs.png)
+  ![09_builds_view_logs](https://github.com/justone0127/container-workshop-02.openshift-labs/blob/main/images/09_builds_view_logs.png)
 
 - **View logs**를 선택하면 상세로그를 확인 할 수 있습니다.
 
-  ![10_view_logs](C:\Works\01_자료\01_OCP\2023_KDN_Account_Day\202306_container_workshop\openshift_images\10_view_logs.png)
+  ![10_view_logs](https://github.com/justone0127/container-workshop-02.openshift-labs/blob/main/images/10_view_logs.png)
 
 - **Open URL** 버튼을 선택하여 애플리케이션이 정상적으로 호출되는지 확인합니다.
 
-  ![11_open_url](C:\Works\01_자료\01_OCP\2023_KDN_Account_Day\202306_container_workshop\openshift_images\11_open_url.png)
+  ![11_open_url](https://github.com/justone0127/container-workshop-02.openshift-labs/blob/main/images/11_open_url.png)
 
 - VM과 Container 환경에서 실행했던 동일한 애플리케이션이 OpenShift 환경에서도 동일하게 서비스 됨을 확인하였습니다.
 
-  ![12_application_service](C:\Works\01_자료\01_OCP\2023_KDN_Account_Day\202306_container_workshop\openshift_images\12_application_service.png)
+  ![12_application_service](https://github.com/justone0127/container-workshop-02.openshift-labs/blob/main/images/12_application_service.png)
 
 
 
@@ -126,7 +126,7 @@ Blue / Green 배포는 두 가지 버전의 애플리케이션을 동시에 실�
 
 - 웹 터미널 실행
 
-  ![user_webterminal_new_windows](C:\Works\01_자료\01_OCP\2023_KDN_Account_Day\container-demo-main\user_webterminal_new_windows.png)
+  ![user_webterminal_new_windows](https://github.com/justone0127/container-workshop-02.openshift-labs/blob/main/images/user_webterminal_new_windows.png)
 
 - 프로젝트 생성
 
@@ -249,7 +249,7 @@ Blue / Green 배포는 두 가지 버전의 애플리케이션을 동시에 실�
         status: "True"
   ```
 
-  ![oc_edit_route_bluegreen](C:\Works\01_자료\01_OCP\2023_KDN_Account_Day\container-demo-main\oc_edit_route_bluegreen.png)
+  ![oc_edit_route_bluegreen](https://github.com/justone0127/container-workshop-02.openshift-labs/blob/main/images/oc_edit_route_bluegreen.png)
 
   > name : green 부분을 blue로 수정합니다.
 
@@ -257,11 +257,11 @@ Blue / Green 배포는 두 가지 버전의 애플리케이션을 동시에 실�
 
   웹 콘솔 접속 > 관리자 뷰 > Networking > Routes > Edit Route 선택
   
-  ![console_edit_routes](C:\Works\01_자료\01_OCP\2023_KDN_Account_Day\container-demo-main\console_edit_routes.png)
+  ![console_edit_routes](https://github.com/justone0127/container-workshop-02.openshift-labs/blob/main/images/console_edit_routes.png)
   
 - 서비스를 blue로 변경 후 저장
 
-  ![update_blue_route](C:\Works\01_자료\01_OCP\2023_KDN_Account_Day\container-demo-main\update_blue_route.png)
+  ![update_blue_route](https://github.com/justone0127/container-workshop-02.openshift-labs/blob/main/images/update_blue_route.png)
   
 - curl로 버전 확인
 
@@ -322,17 +322,17 @@ A/B 배포 전략을 사용하면 프로덕션 환경에서 제한된 방식으�
 
   > 위와 같이 내용을 편집합니다.
 
-  ![ab_test_edit_route](C:\Works\01_자료\01_OCP\2023_KDN_Account_Day\container-demo-main\ab_test_edit_route.png)
+  ![ab_test_edit_route](https://github.com/justone0127/container-workshop-02.openshift-labs/blob/main/images/ab_test_edit_route.png)
 
 - 콘솔에서 설정하는 방법
 
   웹 콘솔 접속 > 관리자 뷰 > Networking > Routes > Edit Route 선택 
   
-  ![console_edit_routes](C:\Works\01_자료\01_OCP\2023_KDN_Account_Day\container-demo-main\console_edit_routes.png)
+  ![console_edit_routes](https://github.com/justone0127/container-workshop-02.openshift-labs/blob/main/images/console_edit_routes.png)
 
 -  Add alternate Service 선택
 
-  ![add_alternate_service](C:\Works\01_자료\01_OCP\2023_KDN_Account_Day\container-demo-main\add_alternate_service.png)
+  ![add_alternate_service](https://github.com/justone0127/container-workshop-02.openshift-labs/blob/main/images/add_alternate_service.png)
 
 - green의 비율은 50으로 설정하고, blue를 Alternate Service target으로 다음과 같이 설정한 후 저장
 
@@ -342,7 +342,7 @@ A/B 배포 전략을 사용하면 프로덕션 환경에서 제한된 방식으�
 
   - Alternative Service weight : 50
 
-    ![add_alternate_service_02](C:\Works\01_자료\01_OCP\2023_KDN_Account_Day\container-demo-main\add_alternate_service_02.png)
+    ![add_alternate_service_02](https://github.com/justone0127/container-workshop-02.openshift-labs/blob/main/images/add_alternate_service_02.png)
 
 - 명령어 수행
 
