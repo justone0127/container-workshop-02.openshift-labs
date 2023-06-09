@@ -5,7 +5,7 @@ OpenShift 환경에서 애플리케이션을 배포해 보고, 몇 가지 배포
 ```
 목차
 1. 환경 설명
-2. OpenShift 환경 배포
+2. OpenShift 환경에 애플리케이션 배포
 3. Blue/Green 테스트
 4. A/B 테스트
 ```
