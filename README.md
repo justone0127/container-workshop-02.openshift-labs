@@ -194,7 +194,7 @@ Blue / Green 배포는 두 가지 버전의 애플리케이션을 동시에 실�
 
 - Green Deployment 생성
 
-  애플리케이션의 새로운 버전에 대한 배포(Deployment)를 생성하고 이름을 green라고 지정합니다.
+  애플리케이션의 새로운 버전에 대한 배포(Deployment)를 생성하고 이름을 green이라고 지정합니다.
 
   ```bash
   oc new-app --docker-image=quay.io/gpte-devops-automation/ocp-probe:v0.5 --name=green
