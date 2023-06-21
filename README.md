@@ -78,7 +78,7 @@ OpenShift에 애플리케이션을 배포하기 위해서 프로젝트를 생성
 
   ![04_developer_catalog](https://github.com/justone0127/container-workshop-02.openshift-labs/blob/main/images/04_developer_catalog.png)
 
-- 검색창에 `httpd`를 검색한 후, **Builder Images**의 **Apache HTTP Server (httpd)**를 선택합니다.
+- 검색창에 `httpd`를 검색한 후, **Builder Images**의 Apache HTTP Server (httpd)를 선택합니다.
 
   ![05_builder_images](https://github.com/justone0127/container-workshop-02.openshift-labs/blob/main/images/05_builder_images.png)
 
