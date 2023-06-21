@@ -131,7 +131,7 @@ Blue / Green 배포는 두 가지 버전의 애플리케이션을 동시에 실�
 - 프로젝트 생성
 
   ```bash
-  $ oc new-project userX-bluegreen --display-name="Blue-Green Deployments"
+  oc new-project userX-bluegreen --display-name="Blue-Green Deployments"
   ```
 
   > `userX`에 자신의 user로 수정하여 프로젝트를 생성합니다.
@@ -139,7 +139,7 @@ Blue / Green 배포는 두 가지 버전의 애플리케이션을 동시에 실�
 - 애플리케이션 생성
 
   ```bash
-  $ oc new-app --docker-image=quay.io/gpte-devops-automation/ocp-probe:v0.4 --name=blue 
+  oc new-app --docker-image=quay.io/gpte-devops-automation/ocp-probe:v0.4 --name=blue 
   ```
 
 - Pod 상태 확인
@@ -147,7 +147,7 @@ Blue / Green 배포는 두 가지 버전의 애플리케이션을 동시에 실�
   콘솔의 Topology 뷰 또는 CLI 명령을 통해 애플리케이션 Pod의 상태를 확인합니다.
 
   ```bash
-  $ oc get pods
+  oc get pods
   NAME                   READY   STATUS    RESTARTS   AGE
   blue-dd7f969b4-5w48m   1/1     Running   0          5s
   ```
@@ -155,7 +155,7 @@ Blue / Green 배포는 두 가지 버전의 애플리케이션을 동시에 실�
 - 서비스 확인
 
   ```bash
-  $ oc get svc
+  oc get svc
   NAME    TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)    AGE
   blue    ClusterIP   172.30.57.247   <none>        8080/TCP   55s
   ```
@@ -165,14 +165,14 @@ Blue / Green 배포는 두 가지 버전의 애플리케이션을 동시에 실�
 - 경로(Route) 생성
 
   ```bash
-  $ oc expose svc blue --name=bluegreen
+  oc expose svc blue --name=bluegreen
   route.route.openshift.io/bluegreen exposed
   ```
 
 - 경로(Route) 확인
 
   ```bash
-  $ oc get route
+  oc get route
   NAME        HOST/PORT                                                              PATH   SERVICES   PORT       TERMINATION   WILDCARD
   bluegreen   bluegreen-user1-bluegreen.apps.cluster-tzmzd.sandbox2394.opentlc.com          blue       8080-tcp                 None
   ```
@@ -188,7 +188,7 @@ Blue / Green 배포는 두 가지 버전의 애플리케이션을 동시에 실�
 - curl 명령어로 버전 확인
 
   ```bash
-  $ curl $ROUTE/version
+  curl $ROUTE/version
   0.4
   ```
 
@@ -203,7 +203,7 @@ Blue / Green 배포는 두 가지 버전의 애플리케이션을 동시에 실�
 - 애플리케이션 상태 확인
 
   ```bash
-  $ oc get pods
+  oc get pods
   NAME                     READY   STATUS    RESTARTS   AGE
   blue-dd7f969b4-5w48m     1/1     Running   0          49s
   green-56d6d79f86-ng46l   1/1     Running   0          10s
@@ -212,7 +212,7 @@ Blue / Green 배포는 두 가지 버전의 애플리케이션을 동시에 실�
 - 서비스 확인
 
   ```bash
-  $ oc get svc
+  oc get svc
   NAME    TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)    AGE
   blue    ClusterIP   172.30.57.247   <none>        8080/TCP   55s
   green   ClusterIP   172.30.87.89    <none>        8080/TCP   16s
@@ -266,7 +266,7 @@ Blue / Green 배포는 두 가지 버전의 애플리케이션을 동시에 실�
 - curl로 버전 확인
 
   ```bash
-  $ curl $ROUTE/version
+  curl $ROUTE/version
   0.5
   ```
 
@@ -277,14 +277,14 @@ Blue / Green 배포는 두 가지 버전의 애플리케이션을 동시에 실�
   다시 명령어를 통해 경로(Route)를 편집하고 서비스를 blue로 전환합니다. 이번에는 `oc patch` 명령어를 통해 수행합니다.
 
   ```bash
-  $ oc patch route/bluegreen -p '{"spec":{"to":{"name":"blue"}}}'
+  oc patch route/bluegreen -p '{"spec":{"to":{"name":"blue"}}}'
   route.route.openshift.io/bluegreen patched
   ```
 
 - curl로 버전 확인
 
   ```bash
-  $ curl $ROUTE/version
+  curl $ROUTE/version
   0.4
   ```
 
@@ -305,7 +305,7 @@ A/B 배포 전략을 사용하면 프로덕션 환경에서 제한된 방식으�
   Spec: 섹션이 다음과 유사하게 보이도록 `alternateBackends`를 추가하도록 경로를 편집하여 A/B 테스트 모드에서 배포를 구성합니다.
 
   ```bash
-  $ oc edit route bluegreen
+  oc edit route bluegreen
   ```
 
   ```yaml
@@ -349,7 +349,7 @@ A/B 배포 전략을 사용하면 프로덕션 환경에서 제한된 방식으�
   WebTerminal에서 다음 명령을 수행합니다.
   
   ```bash
-  $  while true; do curl $ROUTE/version ; echo ""; sleep 1; done
+  while true; do curl $ROUTE/version ; echo ""; sleep 1; done
   0.5
   0.5
   0.4
