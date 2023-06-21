@@ -1,6 +1,6 @@
 ## Account Day - Container Workshop - OpenShift Labs
 
-오픈시프트 환경에서 애플리케이션을 배포해보고, 몇 가지 테스트를 통해 직접 경험해보는 워크샵입니다.
+OpenShift Cluster 환경에서 애플리케이션을 배포해보고, 몇 가지 테스트를 통해 직접 경험해보는 Workshop입니다.
 
 ```
 목차
