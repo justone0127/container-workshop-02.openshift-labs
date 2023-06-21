@@ -1,4 +1,4 @@
-## Account Day - Container Workshop - OpenShift Labs
+![image](https://github.com/justone0127/container-workshop-02.openshift-labs/assets/60336565/05fa3234-1799-4056-9d8b-fb0b743e372c)## Account Day - Container Workshop - OpenShift Labs
 
 컨테이너 기술의 특징을 확인하고, 가상머신과의 차이점을 알아보는 데모입니다. 
 
@@ -27,7 +27,7 @@ Workshop 환경은 OpenShift Cluster 환경에서 실행되며, 각 고유한 �
 
   - 계정/비밀번호 : <span style="color: red"> userX / openshift </span>
 
-  ![console_connect](https://github.com/justone0127/container-workshop-02.openshift-labs/blob/main/images/01_creating_project.png)
+  ![console_connect](https://github.com/justone0127/container-workshop-02.openshift-labs/blob/main/images/console_connect.png)
 
 **1-2) Web Terminal 실행 방법**
 
