@@ -25,7 +25,7 @@ Workshop 환경은 OpenShift Cluster 환경에서 실행되며, 각 고유한 �
 
 - OpenShift Console 접속 : 제공 받은 Console URL 정보를 가지고 웹 브라우저를 통해 접속 합니다. 
 
-  - 계정/비밀번호 : <span style="color: red"> userx / openshift </span>
+  - 계정/비밀번호 : <span style="color: red"> userX / openshift </span>
 
   ![console_connect](https://github.com/justone0127/container-workshop-02.openshift-labs/blob/main/images/01_creating_project.png)
 
@@ -64,7 +64,7 @@ OpenShift에 애플리케이션을 배포하기 위해서 프로젝트를 생성
 
   ![01_creating_project](https://github.com/justone0127/container-workshop-02.openshift-labs/blob/main/images/01_creating_project.png)
 
-- `프로젝트 이름` : userx-demo 입력 (자신의 계정-demo)
+- `프로젝트 이름` : userX-demo 입력 (자신의 계정-demo)
 
   ![02_user1_demo_project](https://github.com/justone0127/container-workshop-02.openshift-labs/blob/main/images/02_user1_demo_project.png)
 
@@ -131,10 +131,10 @@ Blue / Green 배포는 두 가지 버전의 애플리케이션을 동시에 실�
 - 프로젝트 생성
 
   ```bash
-  $ oc new-project userx-bluegreen --display-name="Blue-Green Deployments"
+  $ oc new-project userX-bluegreen --display-name="Blue-Green Deployments"
   ```
 
-  > `userx`에 자신의 user로 수정하여 프로젝트를 생성합니다.
+  > `userX`에 자신의 user로 수정하여 프로젝트를 생성합니다.
 
 - 애플리케이션 생성
 
