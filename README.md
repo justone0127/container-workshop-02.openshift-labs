@@ -1,6 +1,6 @@
 ![image](https://github.com/justone0127/container-workshop-02.openshift-labs/assets/60336565/05fa3234-1799-4056-9d8b-fb0b743e372c)## Account Day - Container Workshop - OpenShift Labs
 
-컨테이너 기술의 특징을 확인하고, 가상머신과의 차이점을 알아보는 데모입니다. 
+오픈시프트 환경에서 애플리케이션을 배포해보고, 몇 가지 테스트를 통해 직접 경험해보는 워크샵입니다.
 
 ```
 목차
